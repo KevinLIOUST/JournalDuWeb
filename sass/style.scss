@@ -178,7 +178,7 @@ main {
         display: flex;
         justify-self: flex-end;
         width: 25%;
-        margin: 0.3rem;
+        margin: 0.2rem;
         position: relative;
         background-color: rgb(100, 27, 27);
         border-radius: 0.2rem;
@@ -227,7 +227,7 @@ main {
 
 // Appel du Mixin pour l'utiliser
 .triangle {
-  @include arrow('bottom', white, 0.8em);
+  @include arrow('bottom', white, 1em);
 }
 
 // Le Footer de la page web
@@ -282,8 +282,9 @@ footer {
   // Pour contenir les 3 articles
   .container {
     display: block;
-    width: 100%;
+    width: 90%;
     margin-top: 2rem;
+    margin: 0 auto;
   }
 
   // Pour le contour des articles
@@ -293,5 +294,24 @@ footer {
       rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     background-color: rgb(152, 148, 148);
     margin-bottom: 2rem;
+  }
+
+  // Pour l'intitulé de l'article
+  main {
+    .container {
+      .container__card {
+        h3 {
+          display: flex;
+          justify-content: center;
+          background-color: black;
+          padding: 1rem;
+          margin-left: 2rem;
+          margin-right: 2rem;
+          margin-top: 1rem;
+          color: white;
+          border-radius: 0.3rem;
+        }
+      }
+    }
   }
 }
