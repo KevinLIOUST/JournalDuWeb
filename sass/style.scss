@@ -58,8 +58,8 @@ header nav div h2 {
   border-radius: 1.25rem;
 }
 
-#date_du_jour {
-}
+// #date_du_jour {
+// }
 
 #web {
   background-color: black;
@@ -178,12 +178,11 @@ main {
 }
 
 @mixin arrow($direction, $color, $size) {
-  display: inline;
   height: 0;
   width: 0;
+  margin-left: 0.5rem;
 
-  position: absolute;
-  justify-items: flex-end;
+  // position: absolute;
 
   @if $direction == 'top' {
     border-top: $size solid transparent;

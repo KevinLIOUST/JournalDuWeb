@@ -128,11 +128,9 @@ main .container .container__card button {
 }
 
 .triangle {
-  display: inline;
   height: 0;
   width: 0;
-  position: absolute;
-  justify-items: flex-end;
+  margin-left: 0.5rem;
   border-top: 0.8em solid red;
   border-bottom: 0.8em solid transparent;
   border-right: 0.8em solid transparent;
