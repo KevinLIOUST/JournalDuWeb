@@ -131,7 +131,7 @@ main .container .container__card button {
   height: 0;
   width: 0;
   margin-left: 0.5rem;
-  border-top: 0.8em solid red;
+  border-top: 0.8em solid white;
   border-bottom: 0.8em solid transparent;
   border-right: 0.8em solid transparent;
   border-left: 0.8em solid transparent;

@@ -1,22 +1,28 @@
+// Importation de la police d'écriture
+
 @font-face {
   font-family: AlfaSlabOne-Regular;
   src: url('/font/AlfaSlabOne-Regular.ttf') format('truetype');
 }
 
+// Fond pour la page web
 body {
   background-image: url('/images/fond.webp');
 }
 
+// L'entête de la page
 header {
   display: flexbox;
   font-family: AlfaSlabOne-Regular;
 }
 
+// Barre de navigation
 header nav {
   display: grid;
   grid-template-columns: 15% 85%;
 }
 
+// Premier span du header
 header span:nth-child(2) {
   display: flex;
   justify-content: flex-end;
@@ -28,10 +34,7 @@ header span:nth-child(2) {
   padding-bottom: 0.25rem;
 }
 
-// header nav div:nth-child(1) {
-//     display: inline;
-// }
-
+// Logo Les News
 header nav div img {
   display: flex;
   justify-content: flex-start;
@@ -40,12 +43,14 @@ header nav div img {
   height: 15rem;
 }
 
+// Nom de la page web
 header nav div h1 {
   display: inline-flexbox;
   margin-left: 2rem;
   margin-bottom: 1rem;
 }
 
+// Sous-titre de la page web
 header nav div h2 {
   display: inline-flexbox;
   margin-left: 2rem;
@@ -58,9 +63,7 @@ header nav div h2 {
   border-radius: 1.25rem;
 }
 
-// #date_du_jour {
-// }
-
+// Web en noir
 #web {
   background-color: black;
   color: white;
@@ -71,6 +74,7 @@ main {
   font-family: AlfaSlabOne-Regular;
 }
 
+// Pour contenir les 3 articles
 .container {
   display: grid;
   width: 100%;
@@ -80,6 +84,7 @@ main {
   margin-top: 2rem;
 }
 
+// Pour le contour des articles
 .container__card {
   display: block;
   box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px,
@@ -87,6 +92,7 @@ main {
   background-color: rgb(152, 148, 148);
 }
 
+// Pour l'intitulé de l'article
 main {
   .container {
     .container__card {
@@ -103,6 +109,7 @@ main {
   }
 }
 
+// Pour l'image du personnage
 main {
   .container {
     .container__card {
@@ -117,6 +124,7 @@ main {
   }
 }
 
+// Pour l'image et le freepng.fr
 main {
   .container {
     .container__card {
@@ -130,6 +138,7 @@ main {
   }
 }
 
+// Pour le Freepng.fr
 main {
   .container {
     .container__card {
@@ -147,6 +156,7 @@ main {
   }
 }
 
+// Pour le texte qui accompagne l'article
 main {
   .container {
     .container__card {
@@ -158,6 +168,7 @@ main {
   }
 }
 
+// Pour le bouton lire plus
 main {
   .container {
     .container__card {
@@ -177,12 +188,11 @@ main {
   }
 }
 
+// Mixin pour dessiner la flèche sur le bouton lire plus
 @mixin arrow($direction, $color, $size) {
   height: 0;
   width: 0;
   margin-left: 0.5rem;
-
-  // position: absolute;
 
   @if $direction == 'top' {
     border-top: $size solid transparent;
@@ -213,10 +223,12 @@ main {
   }
 }
 
+// Appel du Mixin pour l'utiliser
 .triangle {
-  @include arrow('bottom', red, 0.8em);
+  @include arrow('bottom', white, 0.8em);
 }
 
+// Le Footer de la page web
 footer {
   display: flex;
   justify-content: center;
