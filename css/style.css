@@ -147,4 +147,46 @@ footer {
   color: white;
 }
 
+@media only screen and (max-width: 600px) {
+  header span:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 8px;
+    background-color: black;
+    color: white;
+    margin-left: 85%;
+    padding-left: 1rem;
+    padding-bottom: 0.25rem;
+  }
+  header nav div img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+  }
+  header nav div h2 {
+    display: inline-flexbox;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1.25rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    border-radius: 1.25rem;
+  }
+  .container {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .container__card {
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    background-color: rgb(152, 148, 148);
+    margin-bottom: 2rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
