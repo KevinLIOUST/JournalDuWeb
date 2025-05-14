@@ -204,6 +204,7 @@ main {
   height: 0;
   width: 0;
   margin-left: 0.5rem;
+  margin-top: 0.8rem;
 
   @if $direction == 'top' {
     border-top: $size solid transparent;
